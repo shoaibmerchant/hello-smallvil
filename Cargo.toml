@@ -1,0 +1,19 @@
+[package]
+name = "smallvil"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/shoaibmerchant/hello-smallvil"
+
+[dependencies]
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }
+bitflags = "2.2.1"
+
+[dependencies.smithay]
+git = "https://github.com/shoaibmerchant/smithay"
+branch = "master"
+default-features = false
+features = [
+    "backend_winit",
+    "wayland_frontend",
+    "desktop",
+]
